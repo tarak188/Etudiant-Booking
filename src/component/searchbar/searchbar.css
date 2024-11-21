@@ -1,0 +1,50 @@
+.searchbar1{
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  input {
+    font-size: 1rem;
+    width: 15%;
+    position: absolute;
+    top: 70px;
+    margin-top: 20px;
+  }
+  
+  .university-cards {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 0.5rem;       
+    margin-top: 1rem;
+    background-color: red; 
+    padding: 10px; 
+
+  }
+  
+  .card {
+    padding: 5px;       
+    border: none;
+    background-color: white; 
+    border-radius: 20px;
+    margin: 0;                  
+    width: calc(33% - 1rem); 
+  }
+  
+  
+  .card > .header {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  
+  .card > .body {
+    font-size: 0.8rem;
+    color: #777;
+    
+  }
+  
+  .hide {
+    display: none;
+  }
+}

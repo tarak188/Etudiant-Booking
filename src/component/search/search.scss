@@ -1,0 +1,22 @@
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: mediumturquoise;
+  }
+  
+  .appartements-container {
+    flex: 1;
+  }
+  
+  .map-container {
+    flex: 1;
+    margin-left: 20px; /* Adjust this value as needed */
+    height: 100vh; /* Make sure the map container has a defined height */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%; /* Adjust the width as needed */
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  

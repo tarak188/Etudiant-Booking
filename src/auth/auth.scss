@@ -1,0 +1,142 @@
+@import "../src/responsive.scss";
+
+.layout {
+  height: 100vh;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+
+  .rect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100vw + 40px); 
+    margin-left: -78px; 
+    margin-right: -20px; 
+    padding: 20px; 
+    background-color: #FFFFF0;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      span {
+        font-family: Andale Mono, monospace	;
+      }
+
+      img {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      p {
+        margin: 0;
+        strong {
+          display: block;
+          margin-bottom: 5px;
+        }
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+  
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  .logo {
+    width: 100px;
+   }
+
+  a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+
+    &:hover {
+      scale: 1.05;
+    }
+  }
+
+  .left {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .right {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    a {
+      padding: 12px 24px;
+      margin: 20px;
+    }
+
+    .register {
+      background-color: lightcoral;
+      color: white;
+      border-radius: 20px;
+    }
+    
+
+    .menuIcon {
+      display: none;
+
+      img {
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+      }
+
+      @include sm {
+        display: inline;
+      }
+    }
+
+    .menu {
+      position: absolute;
+      background-color: black;
+      color: white;
+      height: 100vh;
+      width: 50%;
+      top: 0;
+      right: -50%;
+      transition: right 0.4s ease;
+
+      &.active {
+        right: 0;
+      }
+    }
+  }
+}
+
+Center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+}
+.searchbar {
+background-color: red;}
+.barpos{
+margin-left: 580px;
+
+}
+
+
+}

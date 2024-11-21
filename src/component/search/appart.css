@@ -1,0 +1,77 @@
+.apartment-list {
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+  }
+  
+  .apartment-item {
+    border: 1px solid #ccc;
+    padding: 30px;
+    max-width: 300px;
+    cursor: pointer;
+margin-top: 20px;
+background-color: white;
+border-radius: 20px;
+
+
+  }
+  
+  .apartment-item img {
+    width: 100%;
+    height: auto;
+    
+  }
+  .butn{
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+
+  }
+  .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .appartements-container {
+    flex: 1;
+  }
+  
+  .map-container {
+    flex: 1;
+    margin-left: 20px; /* Adjust this value as needed */
+    height: 100vh; /* Make sure the map container has a defined height */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%; /* Adjust the width as needed */
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  /* Add this to your CSS file */
+.loading {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.filterbut{
+  margin-left: 100px;
+  width: 50px;
+  margin-top: 60px;
+}
+.title1{
+  margin-bottom: 20px;
+}
+  

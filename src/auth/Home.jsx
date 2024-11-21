@@ -1,24 +1,24 @@
 import React from "react";
-import "./app.scss";
-import Navbar from "./component/navbar.jsx";
-import Center from "./component/center.jsx";
-import Imageslider1 from "./component/imageSlider.jsx";
-import shield from "./pictures/shield.gif";
-import property from "./pictures/property.gif";
-import friends from "./pictures/three-friends.gif";
-import friendship from "./pictures/friendship.gif";
-import Footer from "./component/footer.jsx";
-import Search1 from "./component/search/search.jsx"; 
-import Appartements1 from "./component/search/appartements.jsx";
-function App() {
+import "./auth.scss"; 
+import Center from "../component/center.jsx";
+import Imageslider1 from "../component/imageSlider.jsx";
+import shield from "../pictures/shield.gif";
+import property from "../pictures/property.gif";
+import friends from "../pictures/three-friends.gif";
+import friendship from "../pictures/friendship.gif";
+import Footer from "../component/footer.jsx";
+import Navbaruser from "./usernavbar.jsx";
+
+function UserHome1() {
   return (
-    
     <div className="layout">
-     {/*<Appartements1/>*/}
-       <div><Navbar /></div>
-      
-      
+      {/* Navbar */}
+      <Navbaruser />
+
+      {/* Image Slider */}
       <Imageslider1 />
+
+      {/* Info Section */}
       <div className="rect">
         <div className="item">
           <img src={shield} alt="Shield" />
@@ -49,10 +49,12 @@ function App() {
           </p>
         </div>
       </div>
+
       <Center />
-      <Footer /> {/* */}
+
+      <Footer />
     </div>
   );
 }
 
-export default App;
+export default UserHome1;
